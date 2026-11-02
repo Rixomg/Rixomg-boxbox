@@ -1,0 +1,15 @@
+{
+  "name": "Box Box — Manager de carreras",
+  "short_name": "Box Box",
+  "description": "Dirige tu equipo de carreras: estrategia, neumáticos, boxes y radio.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#0b0d12",
+  "theme_color": "#0b0d12",
+  "lang": "es",
+  "icons": [
+    { "src": "iconos/icono.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

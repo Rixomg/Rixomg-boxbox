@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Rixomg">
+  <meta name="copyright" content="Box Box (c) 2026 Rixomg. Todos los derechos reservados. Prohibida su copia, modificación o distribución sin permiso.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0d12">
+  <title>Box Box — Manager de carreras</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="iconos/icono.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,800&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css?v=20261103i">
+</head>
+<body>
+  <div id="app">
+    <div id="girarMovil"><div style="font-size:56px">📱↻</div><b>Gira el móvil</b><span>Box Box se juega en horizontal</span></div>
+    <canvas id="lienzo"></canvas>
+    <div id="etiquetas"></div>
+    <div id="hud" class="oculto">
+      <div id="torre" class="panel">
+        <div class="torre-cabecera" title="Clic: cambiar intervalo / diferencia con el líder">
+          <span class="logo-mini">BOX<b>BOX</b></span>
+          <span id="hudVuelta">VUELTA 1/1</span>
+        </div>
+        <div id="torreModo">INTERVALO</div>
+        <div id="torreFilas"></div>
+      </div>
+      <div id="semaforoHUD" class="oculto">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div id="estadoCarrera" class="oculto"></div>
+      <div id="banner" class="oculto"></div>
+      <div id="ladoDerecho">
+        <div id="clima" class="panel"></div>
+        <div id="controlesTiempo" class="panel"></div>
+        <canvas id="minimapa" class="panel" width="220" height="220"></canvas>
+        <button id="botonRadio" class="panel">📻 Radio <b class="sinLeer"></b></button>
+        <div id="radio" class="panel oculto"></div>
+      </div>
+      <div id="abajo">
+        <div id="rotuloFoco"></div>
+        <div id="tarjetas"></div>
+      </div>
+      <div id="avisoDuelo" class="oculto"></div>
+      <div id="panelBatalla" class="panel oculto"></div>
+      <button id="botonTiempos" class="panel">⏱ Tiempos por vuelta</button>
+      <div id="panelTiempos" class="panel oculto"></div>
+      <button id="botonMundial" class="panel oculto">🏆 Mundial ahora</button>
+      <div id="panelMundial" class="panel oculto"></div>
+      <button id="botonRepes" class="panel">▶ Repeticiones <b>0</b></button>
+      <div id="panelRepes" class="panel oculto"></div>
+      <div id="repeticion" class="oculto"></div>
+      <div id="barraCamaras" class="panel"></div>
+    </div>
+    <div id="pantallas"></div>
+    <div id="cargando" class="oculto"><div class="girando"></div><p id="textoCargando">Construyendo circuito…</p></div>
+  </div>
+  <script src="lib/three.min.js?v=20261103i"></script>
+  <script src="app.js?v=20261103i"></script>
+</body>
+</html>
