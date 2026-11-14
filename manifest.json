@@ -4,7 +4,7 @@
   "description": "Dirige tu equipo de carreras: estrategia, neumáticos, boxes y radio.",
   "start_url": "./index.html",
   "scope": "./",
-  "display": "fullscreen",
+  "display": "standalone",
   "orientation": "landscape",
   "background_color": "#0b0d12",
   "theme_color": "#0b0d12",
